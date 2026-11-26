@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English for Kids — Учим слова!</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Comic Sans MS', 'Arial', sans-serif; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; text-align: center; }
+        h1 { color: #0369a1; margin-top: 20px; margin-bottom: 10px; font-size: 2rem; }
+        p.subtitle { color: #0c4a6e; margin-bottom: 30px; font-size: 1.1rem; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px; width: 100%; max-width: 800px; margin-bottom: 40px; }
+        .card { background: white; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); padding: 30px 15px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; border: 3px solid #38bdf8; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 180px; user-select: none; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 15px 25px rgba(0,0,0,0.15); }
+        .card .emoji { font-size: 3rem; margin-bottom: 10px; }
+        .card .word { font-size: 1.5rem; font-weight: bold; color: #1e293b; }
+        .card .translation { font-size: 1.2rem; color: #059669; margin-top: 5px; display: none; font-weight: bold; }
+        .card.flipped { background: #f0fdf4; border-color: #4ade80; }
+        .card.flipped .translation { display: block; }
+        .card.flipped .word { color: #166534; }
+        footer { margin-top: auto; color: #64748b; font-size: 0.9rem; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🐶 English for Kids 🐱</h1>
+    <p class="subtitle">Нажми на карточку, чтобы узнать перевод!</p>
+    <div class="card-grid">
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="emoji">🐶</div>
+            <div class="word">Dog</div>
+            <div class="translation">Собака</div>
+        </div>
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="emoji">🐱</div>
+            <div class="word">Cat</div>
+            <div class="translation">Кошка</div>
+        </div>
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="emoji">🍎</div>
+            <div class="word">Apple</div>
+            <div class="translation">Яблоко</div>
+        </div>
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="emoji">☀️</div>
+            <div class="word">Sun</div>
+            <div class="translation">Солнце</div>
+        </div>
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="emoji">🏠</div>
+            <div class="word">House</div>
+            <div class="translation">Дом</div>
+        </div>
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="emoji">🚗</div>
+            <div class="word">Car</div>
+            <div class="translation">Машина</div>
+        </div>
+    </div>
+    <footer>Сделано с ❤️ для изучения английского</footer>
+</body>
+  </html>
